@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+
+/* ! UTILITIES */
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.cta-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #e24b64;
+  border-radius: 5px;
+  padding: 15px 40px;
+  margin: 0 auto;
+}
+.cta-btn:hover {
+  color: white;
+  background-color: #212121;
+}
+
+.title {
+  font-size: 40px;
+  color: #5f5f5f;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 10px;
+}
+
+.title-light {
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 10px;
+}
+
+.details {
+  font-size: 22px;
+  color: #888888;
+  font-weight: 300;
+}
+
+.details-light {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+/* ! NAVBAR */
+
+nav {
+  position: sticky;
+}
+
+.navbar .logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #5e5e5e !important;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #304352;
+}
+
+/* ! HERO SECTION */
+
+.hero {
+  color: white;
+  text-align: center;
+  padding: 300px 0;
+  position: relative;
+}
+
+.hero-info {
+  position: absolute;
+  width: 60%;
+  margin: 0 auto;
+  z-index: 10;
+  top: 50%;
+  margin-top: -101px;
+  left: 20%;
+}
+
+.overlay {
+  background: #304352;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.slider {
+  height: 90vh;
+}
+
+.hero-details {
+  margin-bottom: 25px;
+}
+
+/* ABOUT SECTION */
+
+.about-us {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+}
+
+#about {
+   margin-bottom: 100px;
+}
+
+.about-info {
+  background-color: #ffffff;
+  padding: 100px 50px;
+}
+
+.about-img {
+  width: 80%;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: -100px;
+}
+
+/* TEAM SECTION */
+
+.team-header {
+   margin-bottom: 100px;
+}
+
+.team-card {
+   background-color: #ffffff;
+   padding: 50px 0;
+   height: 400px;
+}
+
+.team-card-details {
+   display: none;
+}
+
+.team-card:hover {
+   background-color: #304352;
+   height: 400px;
+}
+
+.team-card:hover .team-img {
+   bottom: 100px;
+}
+
+.team-card:hover .team-name {
+   bottom: 100px;
+}
+
+.team-card:hover .team-card-details {
+   display: block;
+   position: relative;
+   bottom: 100px;
+}
+
+
+.team-img {
+   position: relative;
+   border-radius: 50%;
+}
+
+.team-name {
+   font-size: 22px;
+   font-weight: 700;
+   letter-spacing: 5px;
+   color: #CE4B62;
+   position: relative;
+   margin-top: 30px;
+}
+
+
+
+
+
+
+
+/* ! MEDIA QUERIES FOR SMALL DEVICE */
+
+@media only screen and (max-width: 768px) {
+}
+
+/* ! MEDIA QUERIES FOR MEDIUM DEVICE */
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 35px;
+  }
+
+  .title-light {
+    font-size: 35px;
+  }
+
+  .slider {
+    height: 93vh;
+  }
+
+  .slider-img {
+    height: 93vh;
+  }
+
+  .overlay {
+    height: 93vh;
+  }
+
+  .hero-info {
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 10;
+    top: 50%;
+    margin-top: -100px;
+    left: 10%;
+  }
+}
