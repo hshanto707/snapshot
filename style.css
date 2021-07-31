@@ -91,6 +91,20 @@ nav {
   animation-duration: 2s;
 }
 
+.slider {
+   height: 93vh;
+ }
+
+ .slider-img {
+   height: 93vh;
+ }
+
+ .overlay {
+   height: 93vh;
+ }
+
+
+
 .overlay {
   background: #304352;
   opacity: 0.8;
@@ -242,7 +256,7 @@ i {
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 5px;
-  margin: 0 10px 50px;
+  margin: 0 10px 20px;
   padding: 10px;
 }
 
@@ -254,19 +268,51 @@ i:hover {
 /* ! MEDIA QUERIES FOR SMALL DEVICE */
 
 @media only screen and (max-width: 768px) {
+  
+   .slider {
+      height: 93vh;
+    }
+  
+    .slider-img {
+      height: 93vh;
+    }
+  
+    .overlay {
+      height: 93vh;
+    }
+
+    .hero-info {
+      position: absolute;
+      width: 80%;
+      margin: 0 auto;
+      z-index: 10;
+      top: 50%;
+      margin-top: -180px;
+      left: 10%;
+    }
+
+    .about-info {
+      padding: 10px;
+    }
+  
+    .about-img {
+      margin: 50px auto;
+      display: flex;
+      justify-content: center;
+    }
 }
 
 /* ! MEDIA QUERIES FOR MEDIUM DEVICE */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   /* UTILITIES */
 
   .title {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   .title-light {
-    font-size: 35px;
+    font-size: 20px;
   }
 
   /* HERO SECTION */
@@ -289,7 +335,7 @@ i:hover {
     margin: 0 auto;
     z-index: 10;
     top: 50%;
-    margin-top: -100px;
+    margin-top: -210px;
     left: 10%;
   }
 
@@ -300,8 +346,8 @@ i:hover {
   }
 
   .about-img {
-     margin: 50px auto;
-     display: flex;
-     justify-content: center;
-   }
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+  }
 }
