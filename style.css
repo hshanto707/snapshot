@@ -87,6 +87,8 @@ nav {
   top: 50%;
   margin-top: -101px;
   left: 20%;
+  animation: fadeInUp;
+   animation-duration: 2s;
 }
 
 .overlay {
@@ -106,9 +108,13 @@ nav {
   height: 90vh;
 }
 
+
+
 .hero-details {
   margin-bottom: 25px;
 }
+
+
 
 /* ABOUT SECTION */
 
@@ -136,8 +142,8 @@ nav {
 
 /* TEAM SECTION */
 
-.team-header {
-   margin-bottom: 100px;
+.section-header {
+   margin: 100px 0;
 }
 
 .team-card {
@@ -152,7 +158,6 @@ nav {
 
 .team-card:hover {
    background-color: #304352;
-   height: 400px;
 }
 
 .team-card:hover .team-img {
@@ -184,9 +189,73 @@ nav {
    margin-top: 30px;
 }
 
+/* GALLERY SECTION */
+
+.gallery-card:hover .gallery-info {
+   display: block;
+   animation: slideInLeft;
+   animation-duration: 0.5s;
+}
 
 
+.gallery-info {
+   background-color: #304352;
+   height: 100%;
+   padding: 15px;
+   display: none;
+}
 
+.gallery-details {
+   font-size: 22px;
+  font-weight: 300;
+  color: #CE4B62;
+}
+
+.gallery-btn {
+   position: absolute;
+   bottom: 15px;
+   right: 15px;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+   background-color: #304352;
+   margin: 100px 0 0;
+   padding: 100px 0;
+}
+
+.contact-form {
+   margin-top: 100px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+   width: 100%;
+   margin-bottom: 20px;
+   padding: 10px;
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+   margin-top: 100px;
+}
+
+i {
+   font-size: 30px;
+   color: #ffffff;
+   border: 2px solid #ffffff;
+   border-radius: 5px;
+   margin: 0 10px 20px;
+   padding: 10px;
+}
+
+i:hover {
+   color: #e24b64;
+   background-color: #ffffff;
+}
 
 
 
